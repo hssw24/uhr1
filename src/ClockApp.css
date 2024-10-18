@@ -70,7 +70,7 @@
   }
   
   .six {
-    bottom: 10px;
+    bottom: -20px; /* statt 10px */
     left: 50%;
   }
   
@@ -80,12 +80,12 @@
     transform: translate(-50%, -50%);
   }
   
-  /* Zeiger */
-  .hour-hand, .minute-hand {
+/* Zeiger */
+.hour-hand, .minute-hand {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform-origin: center center;
+    transform-origin: 50% 100%; /* Drehpunkt am unteren Ende des Zeigers */
     background-color: black;
     border-radius: 5px;
   }
@@ -93,14 +93,16 @@
   .hour-hand {
     width: 6px;
     height: 35%;
-    transform: translate(-50%, 0%) rotate(0deg);
+    transform: rotate(0deg); /* Rotation aus der Mitte */
   }
   
   .minute-hand {
     width: 4px;
     height: 45%;
-    transform: translate(-50%, 0%) rotate(0deg);
+    transform: rotate(0deg); /* Rotation aus der Mitte */
   }
+  
+
   
   /* Mittelpunkt der Uhr */
   .center-point {
