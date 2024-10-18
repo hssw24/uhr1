@@ -49,6 +49,7 @@
     height: 100%;
   }
   
+  /* Korrekte Position der Zahlen */
   .number {
     position: absolute;
     font-size: 24px;
@@ -57,23 +58,23 @@
   }
   
   .twelve {
-    top: 10px;
+    top: 5%;
     left: 50%;
   }
   
   .three {
-    right: 10px;
     top: 50%;
+    right: 5%;
   }
   
   .six {
-    bottom: 10px;
+    bottom: 5%;
     left: 50%;
   }
   
   .nine {
-    left: 10px;
     top: 50%;
+    left: 5%;
   }
   
   /* Zeiger */
@@ -87,20 +88,20 @@
   
   .hour-hand {
     width: 6px;
-    height: 40%;
+    height: 35%;
     transform: translate(-50%, -100%);
   }
   
   .minute-hand {
     width: 4px;
-    height: 55%;
+    height: 45%;
     transform: translate(-50%, -100%);
   }
   
   /* Mittelpunkt der Uhr */
   .center-point {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     background-color: black;
     position: absolute;
     top: 50%;
