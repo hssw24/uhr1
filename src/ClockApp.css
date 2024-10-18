@@ -34,6 +34,7 @@
     border-radius: 50%;
     margin: 20px auto;
     background-color: white;
+    box-sizing: border-box;
   }
   
   @media (max-width: 600px) {
@@ -58,23 +59,25 @@
   }
   
   .twelve {
-    top: 5%;
+    top: 10px;
     left: 50%;
   }
   
   .three {
+    right: 10px;
     top: 50%;
-    right: 5%;
+    transform: translate(50%, -50%);
   }
   
   .six {
-    bottom: 5%;
+    bottom: 10px;
     left: 50%;
   }
   
   .nine {
+    left: 10px;
     top: 50%;
-    left: 5%;
+    transform: translate(-50%, -50%);
   }
   
   /* Zeiger */
@@ -82,26 +85,27 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform-origin: bottom center;
+    transform-origin: center center;
     background-color: black;
+    border-radius: 5px;
   }
   
   .hour-hand {
     width: 6px;
     height: 35%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, 0%) rotate(0deg);
   }
   
   .minute-hand {
     width: 4px;
     height: 45%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, 0%) rotate(0deg);
   }
   
   /* Mittelpunkt der Uhr */
   .center-point {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     background-color: black;
     position: absolute;
     top: 50%;
